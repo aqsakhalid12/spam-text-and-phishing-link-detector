@@ -1,0 +1,22 @@
+Not spam text :
+
+"Following up on our project review meeting from Tuesday, I have compiled the complete feedback notes and updated the technical specification document for the third sprint. The primary goal remains focused on refining the user authentication flow and integrating the new database architecture. We identified three minor issues related to cross-browser compatibility, specifically with older versions of Firefox, which the development team will address by the end of the week. Please take the time to review the sections on API endpoint validation and the unit testing coverage, paying particular attention to the updated documentation standards. We are scheduled for a brief check-in next Monday morning at 10:00 AM to confirm the timeline adjustments before we begin the deployment phase. Let me know if you have any questions before then. Your confirmation of receipt would be appreciated."
+
+Not spam urls :
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP
+
+
+https://support.google.com/mail/answer/6545?hl=en
+
+
+Spam text:
+
+"CONGRATULATIONS! We are excited to announce you have been randomly selected as a WINNER in our annual loyalty reward program, guaranteeing you a FREE, all-inclusive luxury cruise vacation worth over $5,000! This is not a joke! URGENT action is required to claim your prize. Our records indicate your personal information needs immediate verification to process the transfer of funds and documentation for your trip. Your account security status is currently PENDING. You must verify your identity within the next 48 hours, or your entry will be automatically forfeited to the next alternate winner. Do not miss this exclusive, once-in-a-lifetime opportunity! Call our dedicated line at 1-800-555-PRIZE now to confirm. We guarantee your privacy and your claim to this amazing reward. ACT NOW! This offer is not available to the general public and will expire shortly. Thank you for your continued support and loyalty. We look forward to hearing from you to finalize your incredible winnings and secure your guaranteed FREE gift!"
+
+Spam urls :
+
+
+https://micros0ft-support.co/login.php
+
+http://www.bankofamerica-securesignin.com/update

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spam Texts & Link Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+
+  <body>
+    <!-- navigation-bar -->
+    <nav>
+      <div class="navbar">
+        <div class="webLogo">Spam<span>Shield</span></div>
+        <div>
+          <a href="#features">Features</a>
+          <a href="#detect">Detection</a>
+          <a href="#demo">Demo</a>
+        </div>
+      </div>
+    </nav>
+    <!-- hero-section -->
+    <section class="hero">
+      <i class="fa-solid fa-shield-halved float-icon left1"></i>
+      <i class="fa-solid fa-envelope-open-text float-icon left2"></i>
+      <i class="fa-solid fa-link float-icon right1"></i>
+      <i class="fa-solid fa-triangle-exclamation float-icon right2"></i>
+
+      <div class="heroBox">
+        <h1>Spam Text & Malicious Link Detection</h1>
+        <p>
+          Probability-based system to identify phishing massages and harmful
+          URLs
+        </p>
+        <div class="heroBtns">
+          <a href="#detect" class="btn-main">Start Detection</a>
+          <a href="#demo" class="btn-glass">Watch Demo</a>
+        </div>
+      </div>
+    </section>
+    <!-- features-section -->
+    <section class="section" id="features">
+      <div class="title">
+        <h2>System Features</h2>
+        <p>Secure, intelligent and user-friendly</p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <i class="fa-solid fa-envelope-open-text"></i>
+          <h3>Massage Content Analysis</h3>
+          <p>Detect spam or unsafe patterns in text messages.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-link"></i>
+          <h3>Malicious Link Detection</h3>
+          <p>Identify phishing and unsafe URLs.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-chart-pie"></i>
+          <h3>Probability Score</h3>
+          <p>Clear spam likelihood percentage.</p>
+        </div>
+      </div>
+    </section>
+    <!-- detect-section -->
+    <section class="section" id="detect">
+      <div class="title">
+        <h2>Spam Detection</h2>
+        <p>Analyze text or link</p>
+      </div>
+
+      <div class="detector">
+        <div class="tabs">
+          <button class="tab active" onclick="shiftTab('text')">
+            Scan Text
+          </button>
+          <button class="tab" onclick="shiftTab('link')">Scan Link</button>
+        </div>
+
+        <textarea
+          id="textBox"
+          rows="5"
+          placeholder="Paste text here..."
+        ></textarea>
+        <input
+          id="linkBox"
+          type="text"
+          placeholder="Paste suspicious link here..."
+          style="display: none"
+        />
+
+        <button class="analyze" onclick="analyze()">Analyze</button>
+
+        <div class="result" id="result">
+          <i id="resIcon"></i>
+          <h3 id="resText"></h3>
+          <p id="resProb"></p>
+          <div class="bar"><div class="load" id="load"></div></div>
+        </div>
+      </div>
+    </section>
+    <!-- demo-vide-section -->
+    <section class="section demo" id="demo">
+      <div class="title">
+        <h2>System Demo</h2>
+        <p>How spam detection works</p>
+      </div>
+      <video controls>
+        <source
+          src="{{ url_for('static', filename='demo-video.mp4') }}"
+          type="video/mp4"
+        />
+      </video>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="footerWrap">
+        <div>
+          <h3>SpamShield</h3>
+          <p>Final Year Project</p>
+          <p>Spam Detection System</p>
+          <p>BS Computer Science</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <p><a href="#features">Features</a></p>
+          <p><a href="#detection">Detection</a></p>
+          <p><a href="#demo">Demo</a></p>
+        </div>
+        <div>
+          <h3>Project by</h3>
+          <p>Aqsa Khalid</p>
+          <p>Hira Naddir</p>
+          <p>Maira Gillani</p>
+        </div>
+      </div>
+      <div class="footerBottom">© 2026 SpamShield. All rights reserved.</div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

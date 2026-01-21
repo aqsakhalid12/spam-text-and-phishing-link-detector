@@ -1,0 +1,44 @@
+Folder structure : 
+
+
+PhishingDetector/               Main project folder
+│
+├── app.py                      # Main Flask backend code
+├── requirements.txt            # List of Python libraries (Flask, scikit-learn, etc.)
+│
+├── templates/                  # FOLDER: Contains HTML
+│   └── index.html              # Main frontend page
+│
+├── static/                     # FOLDER: Contains assets
+│   ├── style.css               # Design/CSS file
+│   └── script.js               # Frontend logic/JavaScript file
+│
+├── text_phish/                 # FOLDER: Contains Text ML files
+│   ├── text_model.pkl          # Trained Spam Classifier
+│   └── vectorizer.pkl          # The TfidfVectorizer used during training
+│
+├── url_phish/                  # FOLDER: Contains URL ML files
+│   └── url_analysis_model.joblib  # Trained URL Phishing Model
+│
+└── venv/                       # FOLDER: Virtual Environment (Automatic)
+    └── ...                     # (Created after run 'python -m venv venv' or 'py -m venv venv')
+
+
+
+
+
+step 1 
+open cmd in main folder 
+
+step 2
+Create virtual environment by using venv command
+ 
+step 3
+py -m pip install -r requirements.txt #py and python are same if py dont work use python 
+
+
+step 4
+
+C:\Users\a\AppData\Local\Programs\Python\Python314\python.exe app.py
+
+http://127.0.0.1:5000
